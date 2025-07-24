@@ -1,16 +1,19 @@
+public class PatternR {
+public static void main(String[] args) {
+for (int i = 0; i < 5; i++) {
+for (int j = 0; j < 4; j++) {
 
-public class PatternForLoop {
-    public static void main(String[] args) {
-        String[] patterns = {
-                "1 1 R R R R",
-                "1 1 R R",
-                "1 R R R R",
-                "1 1 R",
-                "1 1 R"
-        };
+if (i == 0 || i == 2 ||   
+                (i == 1 && (j == 0 || j == 3)) ||  
+                (i == 3 && (j == 0 || j == 2)) ||  
+                (i == 4 && (j == 0 || j == 3))) {  
+                System.out.print("R ");  
+            } else {  
+                System.out.print("  ");  
+            }  
+        }  
+        System.out.println();  
+    }  
+}
 
-        for (int i = 0; i < patterns.length; i++) {
-            System.out.println(patterns[i]);
-        }
-    }
 }
