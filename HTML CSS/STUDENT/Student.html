@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Personal Registration Form</title>
+  <link rel="stylesheet" href="Student.css" />
+</head>
+<body>
+  <div class="wrap">
+    <div class="card" role="region" aria-labelledby="formTitle">
+      <h1 id="formTitle">Personal Registration Form</h1>
+      <p class="lead">Fill all required fields. Fields marked * are mandatory.</p>
+
+      <form id="regForm" novalidate aria-describedby="formHelp">
+        
+        <!-- Personal Information -->
+        <label for="fullName">Full Name *</label>
+        <input type="text" id="fullName" name="fullName" required />
+
+        <label for="fatherName">Father's Name *</label>
+        <input type="text" id="fatherName" name="fatherName" required />
+
+        <label for="motherName">Mother's Name *</label>
+        <input type="text" id="motherName" name="motherName" required />
+
+        <label for="dob">Date of Birth *</label>
+        <input type="date" id="dob" name="dob" required />
+
+        <label for="mobile">Mobile Number *</label>
+        <input type="tel" id="mobile" name="mobile" placeholder="10-digit number" required />
+
+        <label for="altMobile">Alternate Number</label>
+        <input type="tel" id="altMobile" name="altMobile" placeholder="10-digit number" />
+
+        <!-- Identity Details -->
+        <label for="aadhaar">Aadhaar Number *</label>
+        <input type="text" id="aadhaar" name="aadhaar" maxlength="12" required />
+
+        <label for="pan">PAN Number *</label>
+        <input type="text" id="pan" name="pan" maxlength="10" required />
+
+        <!-- Bank Details -->
+        <label for="bankName">Bank Name *</label>
+        <input type="text" id="bankName" name="bankName" required />
+
+        <label for="accountNo">Account Number *</label>
+        <input type="text" id="accountNo" name="accountNo" required />
+
+        <label for="ifsc">IFSC Code *</label>
+        <input type="text" id="ifsc" name="ifsc" required />
+
+        <!-- Address -->
+        <label for="address">Full Address *</label>
+        <textarea id="address" name="address" required></textarea>
+
+        <label for="state">State *</label>
+        <input type="text" id="state" name="state" required />
+
+        <label for="district">District *</label>
+        <input type="text" id="district" name="district" required />
+
+        <label for="nationality">Nationality *</label>
+        <input type="text" id="nationality" name="nationality" required />
+
+        <!-- Work Experience -->
+        <label for="experience">Work Experience (if any)</label>
+        <textarea id="experience" name="experience"></textarea>
+
+        <label for="expDocs">Upload Work Experience Documents</label>
+        <input type="file" id="expDocs" name="expDocs" multiple />
+
+        <!-- Uploads -->
+        <label for="photo">Upload Photo *</label>
+        <input type="file" id="photo" name="photo" accept="image/*" required />
+
+        <label for="resume">Upload Resume *</label>
+        <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required />
+
+        <label for="proof">Upload ID Proof *</label>
+        <input type="file" id="proof" name="proof" accept=".pdf,.jpg,.jpeg,.png" required />
+
+        <button type="submit">Submit</button>
+      </form>
+
+      <p id="formHelp" class="hint">All documents are uploaded securely. Ensure files are correct before submitting.</p>
+    </div>
+  </div>
+
+  <script src="Student.js"></script>
+</body>
+</html>
+

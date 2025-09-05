@@ -1,0 +1,133 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body background */
+body {
+  background: linear-gradient(135deg, #74ebd5 0%, #9face6 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Wrapper */
+.wrap {
+  width: 100%;
+  max-width: 700px;
+}
+
+/* Card container */
+.card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  padding: 30px 40px;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Heading */
+.card h1 {
+  font-size: 26px;
+  margin-bottom: 10px;
+  color: #333;
+  text-align: center;
+}
+
+.card .lead {
+  font-size: 15px;
+  margin-bottom: 25px;
+  text-align: center;
+  color: #666;
+}
+
+/* Form labels */
+form label {
+  display: block;
+  font-weight: 600;
+  margin: 12px 0 6px;
+  color: #333;
+}
+
+/* Inputs, textareas, selects */
+form input[type="text"],
+form input[type="tel"],
+form input[type="date"],
+form input[type="file"],
+form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Focus effect */
+form input:focus,
+form textarea:focus {
+  border-color: #6a5acd;
+  box-shadow: 0 0 6px rgba(106, 90, 205, 0.4);
+  outline: none;
+}
+
+/* Textarea resize */
+form textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+/* Button style */
+form button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+  font-size: 16px;
+  background: #6a5acd;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+/* Button hover */
+form button:hover {
+  background: #5848c2;
+  transform: translateY(-2px);
+}
+
+/* Hint */
+.hint {
+  margin-top: 15px;
+  font-size: 13px;
+  text-align: center;
+  color: #888;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .card {
+    padding: 20px;
+  }
+  .card h1 {
+    font-size: 22px;
+  }
+}
